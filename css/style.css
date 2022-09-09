@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px
+}
+
+.container {
+    max-width: 300px;
+    padding: 1.2rem;
+    border-radius: 10px;
+    background: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%)
+}
+
+.container .nft {
+    position: relative
+}
+
+.container .nft img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+.container .nft .view {
+    position: absolute;
+    background: hsl(178, 100%, 50%);
+    width: 100%;
+    height: calc(100% - .12rem);
+    top: 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0
+}
+
+.container .nft .view:hover {
+    opacity: 1
+}
+
+.container .nft .view img {
+    width: 50px
+}
+
+.container h1 {
+    font-size: 1.3rem;
+    margin: .6rem 0;
+    display: inline-block;
+    cursor: pointer
+}
+
+.container h1:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+.container p {
+    color: hsl(215, 51%, 70%);
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem
+}
+
+.card_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1rem
+}
+
+.card_info-price,
+.card_info-date {
+    display: flex;
+    align-items: center;
+    font-size: 1rem
+}
+
+.card_info-price span,
+.card_info-date span {
+    margin-left: 5px;
+}
+
+.card_info-price img {
+    width: 12px
+}
+
+.card_info-price span {
+    font-weight: bold;
+    color: hsl(178, 100%, 50%)
+}
+
+.card_info-date img {
+    width: 20px
+}
+
+.card_info-date span {
+    font-size: .9rem;
+    color: hsl(215, 51%, 70%)
+}
+
+.container .profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: .8rem
+}
+
+.container .profile img {
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%
+}
+
+.container .profile p {
+    font-size: .8rem;
+    margin-left: .6rem;
+    margin-bottom: 0
+}
+
+.container .profile a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none
+}
+
+.container .profile a:hover {
+    color: hsl(178, 100%, 50%)
+}
+
+footer {
+    margin-top: 1rem;
+    font-size: .6rem
+}
+
+footer a {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none
+}
